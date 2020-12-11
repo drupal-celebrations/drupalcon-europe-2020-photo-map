@@ -30,15 +30,15 @@
         maxZoom: 8,
         minZoom: 3,
         crs: L.CRS.Simple
-      }).setView([-36, 36], 3);
+      }).setView([37, 37], 3);
 
-      var southWest = map.unproject([0, 18000], map.getMaxZoom());
-      var northEast = map.unproject([18000, 0], map.getMaxZoom());
+      var southWest = map.unproject([0, 18256], map.getMaxZoom());
+      var northEast = map.unproject([18256, 0], map.getMaxZoom());
 
       L.tileLayer("layers/{z}/map_{x}_{y}.jpg", {
         bounds: [
           [0, 0],
-          [-72, 72]
+          [-74, 74]
         ]
       }).addTo(map);
 
