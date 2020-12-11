@@ -32,7 +32,7 @@
       var southWest = map.unproject([0, 18000], map.getMaxZoom());
       var northEast = map.unproject([18000, 0], map.getMaxZoom());
 
-      L.tileLayer("/layers/{z}/map_{x}_{y}.jpg", {
+      L.tileLayer("layers/{z}/map_{x}_{y}.jpg", {
         bounds: [
           [0, 0],
           [-72, 72]
